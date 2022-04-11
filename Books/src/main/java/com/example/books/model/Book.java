@@ -1,9 +1,15 @@
 package com.example.books.model;
 
-public class Book {
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
+public class Book {
+    @NotEmpty(message = "ID is empty!!")
+    @Size(min = 2, max = 8)
     private String id;
+    @NotEmpty(message = "Name is empty!!")
     private String name;
+    @NotEmpty(message = "Author is empty!!")
     private String author;
     private String genre;
 
