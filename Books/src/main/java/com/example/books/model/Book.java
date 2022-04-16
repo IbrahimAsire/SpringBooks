@@ -11,6 +11,7 @@ public class Book {
     private String name;
     @NotEmpty(message = "Author is empty!!")
     private String author;
+    @NotEmpty(message = "genre is empty!!")
     private String genre;
 
     public Book(String id, String name, String author, String genre) {
